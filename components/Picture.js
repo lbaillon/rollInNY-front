@@ -13,7 +13,7 @@ export default function Picture({ selectedImage, isOpen, onClose, onDelete }) {
 
   const handleDelete = () => {
     try {
-      fetch(`https://roll-in-new-york-backend.vercel.app/favorites/pictures`, {
+      fetch(`https://roll-in-ny-back.vercel.app/favorites/pictures`, {
         method: "DELETE",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ publicId: selectedImage.publicId }),

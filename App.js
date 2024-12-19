@@ -64,7 +64,7 @@ function TabNavigator() {
   useEffect(() => {
     dispatch(removeAllMovies()); // Vidage du store au lancement de l'application avant le re remplissage pour des raisons de permformances
     let allMoviesId = [];
-    fetch("https://roll-in-new-york-backend.vercel.app/places/")
+    fetch("https://roll-in-ny-back.vercel.app/places/")
       .then((response) => response.json())
       .then((data) => {
         data.places.forEach((place) => {
@@ -76,7 +76,7 @@ function TabNavigator() {
         });
         allMoviesId.map((movieId) => {
           try {
-            fetch('https://roll-in-new-york-backend.vercel.app/movies/', {
+            fetch('https://roll-in-ny-back.vercel.app/movies/', {
               method: 'POST',
               headers: { 'Content-Type': 'application/json' },
               body: JSON.stringify({movieId: movieId}),
