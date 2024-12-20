@@ -32,7 +32,7 @@ const moviePlace =
 const errorImage =
     "https://res.cloudinary.com/dtkac5fah/image/upload/v1734516235/teflem0cocn53iqsvier.webp";
 
-export default function FavouriteScreen() {
+export default function FavoriteScreen() {
     useFonts({
         "JosefinSans-SemiBold": require("../assets/fonts/JosefinSans-SemiBold.ttf"),
     });
@@ -286,7 +286,7 @@ export default function FavouriteScreen() {
             <Header title="My Favorites" showInput={false} />
             <View
                 style={[
-                    styles.favouritesScreenContainer,
+                    styles.favoritesScreenContainer,
                     { height: scrollViewHeight },
                 ]}
             >
@@ -366,7 +366,7 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
     },
-    favouritesScreenContainer: {
+    favoritesScreenContainer: {
         marginTop: 200,
         paddingTop: 5,
         alignItems: "center",

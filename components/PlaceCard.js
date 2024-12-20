@@ -239,7 +239,7 @@ export default function PlaceCard({
                                     size={40}
                                     style={likeStyle}
                                 />
-                                <Text style={styles.popupText}>Favourites</Text>
+                                <Text style={styles.popupText}>Favorites</Text>
                             </TouchableOpacity>
                             <View style={styles.popupSeparator}></View>
                             {user.token !== null && isLiked == true && (
